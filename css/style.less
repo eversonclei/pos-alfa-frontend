@@ -1,0 +1,146 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto';
+
+@mont: Montserrat, Tahoma, Verdana;
+@robo: Roboto, Arial;
+
+@claro: #ccc;
+@escuro: #333;
+@vermelho: #f00;
+
+@tam1: 2.5em;
+@tam2: 1.8em;
+@tam3: 1.5em;
+@tam4: 1.1em;
+
+.logo {
+	float: left;	
+	font: @tam1 @mont;
+	color: @vermelho;
+	width: 400px;
+	img {
+		width: 20%;
+	}
+}
+
+.logo:hover {
+	color: @vermelho;
+	text-decoration: none;
+}
+
+.info {
+	padding-top: 15px;
+	float: right;	
+	span {
+		color: @vermelho;
+	}
+	a {
+		color: @claro;
+		text-decoration: none;
+		margin-left: 15px;
+	}
+	a:hover {
+		color: @escuro;
+	}
+}
+
+footer {
+	background: @escuro;
+	width: 100%;
+	padding: 10px 0px;
+	color: #fff;
+	margin-top: 20px;
+	img {
+		width: 10%;
+	}
+}
+
+.navbar {
+	border-radius: 0px;
+	margin-top: 10px;
+	background: #fff;
+	border: 0px;
+	box-shadow: 0px 0px 10px @claro;
+	.container-fluid {
+		ul li {
+			padding: 10px 5px;
+			border-left: 1px solid @claro;
+			a {
+				font: @tam4 @mont;
+			}
+			a:hover {
+				color: @claro;
+				background: @escuro;
+			}
+		}
+		li:last-child {
+			border-right: 1px solid @claro;
+		}
+		li:hover, li:active, li a:active {
+			color: @claro;
+			background: @escuro;
+		}		
+		.open {
+			background: @escuro;
+			ul, ul li, ul li a, a:focus, li {
+				color: @claro;
+				background: @escuro;
+			}			
+			ul li a:hover {
+				color: @escuro;
+				background: @claro;
+			}
+			li {
+				border: 0px;
+			}
+
+		}
+	}
+}
+
+h1, h2, h3 {
+	color: @vermelho;
+	font-family: @mont;
+}
+
+h1 {
+	font-size: @tam1;
+}
+
+h2 {
+	font-size: @tam2;
+}
+
+h3 {
+	font-size: @tam3;
+}
+
+.erro {
+	font: @tam3 @robo;
+	text-align: center;;
+	width: 400px;
+}
+
+.btn-danger, .well {
+	border-radius: 0px;
+	border: 0px;
+}
+
+
+@media (max-width: 481px) {
+	header {
+		.logo, .info {
+			width: 100%;
+			text-align: center;
+		}
+		.info {
+			font-size: @tam3;
+		}
+	}
+	footer {
+		span {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+

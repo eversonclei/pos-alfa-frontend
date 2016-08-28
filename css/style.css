@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Roboto';
+.logo {
+  float: left;
+  font: 2.5em Montserrat, Tahoma, Verdana;
+  color: #ff0000;
+  width: 400px;
+}
+.logo img {
+  width: 20%;
+}
+.logo:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+.info {
+  padding-top: 15px;
+  float: right;
+}
+.info span {
+  color: #ff0000;
+}
+.info a {
+  color: #cccccc;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.info a:hover {
+  color: #333333;
+}
+footer {
+  background: #333333;
+  width: 100%;
+  padding: 10px 0px;
+  color: #fff;
+  margin-top: 20px;
+}
+footer img {
+  width: 10%;
+}
+.navbar {
+  border-radius: 0px;
+  margin-top: 10px;
+  background: #fff;
+  border: 0px;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+.navbar .container-fluid ul li {
+  padding: 10px 5px;
+  border-left: 1px solid #cccccc;
+}
+.navbar .container-fluid ul li a {
+  font: 1.1em Montserrat, Tahoma, Verdana;
+}
+.navbar .container-fluid ul li a:hover {
+  color: #cccccc;
+  background: #333333;
+}
+.navbar .container-fluid li:last-child {
+  border-right: 1px solid #cccccc;
+}
+.navbar .container-fluid li:hover,
+.navbar .container-fluid li:active,
+.navbar .container-fluid li a:active {
+  color: #cccccc;
+  background: #333333;
+}
+.navbar .container-fluid .open {
+  background: #333333;
+}
+.navbar .container-fluid .open ul,
+.navbar .container-fluid .open ul li,
+.navbar .container-fluid .open ul li a,
+.navbar .container-fluid .open a:focus,
+.navbar .container-fluid .open li {
+  color: #cccccc;
+  background: #333333;
+}
+.navbar .container-fluid .open ul li a:hover {
+  color: #333333;
+  background: #cccccc;
+}
+.navbar .container-fluid .open li {
+  border: 0px;
+}
+h1,
+h2,
+h3 {
+  color: #ff0000;
+  font-family: Montserrat, Tahoma, Verdana;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+.erro {
+  font: 1.5em Roboto, Arial;
+  text-align: center;
+  width: 400px;
+}
+.btn-danger,
+.well {
+  border-radius: 0px;
+  border: 0px;
+}
+@media (max-width: 481px) {
+  header .logo,
+  header .info {
+    width: 100%;
+    text-align: center;
+  }
+  header .info {
+    font-size: 1.5em;
+  }
+  footer span {
+    width: 100%;
+    text-align: center;
+  }
+}
